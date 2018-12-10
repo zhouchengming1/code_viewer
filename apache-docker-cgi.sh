@@ -2,7 +2,13 @@
 
 file=`readlink -f $0`
 dir=`dirname $file`
-echo $dir
+
+# id -u username
+# id -g username
+# id -G username
+# id username
+uid=$1
+# Use user namespace mapping to map root user
 
 docker run \
 --name code_viewer \
