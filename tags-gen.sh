@@ -11,6 +11,6 @@ if ! $(which gtags)
 then
   apt-get install global || exit
 fi
-/usr/bin/gtags
+gtags
 #htags --auto-completion -fFDnvxhost $2
-/usr/bin/htags -fFDnvhost $2
+htags -fFDnvhost $2
